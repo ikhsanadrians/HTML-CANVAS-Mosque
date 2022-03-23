@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Red+Hat+Mono:wght@500&family=Roboto+Condensed:wght@300;700&family=Smooch+Sans&display=swap" rel="stylesheet">
+    <title>Canvas</title>
+</head>
+<body>
+    <h1 style="font-family: 'Red Hat Mono', monospace;">M Ikhsan Adriansyah</h1>
+    <div style="margin:auto">
+     <canvas id="bukuGambar" width="600" height="400" style="border:1px solid black;"></canvas>
+    </div>
+ 
+ <script>
+let canvas = document.getElementById("bukuGambar");
+let ctx = canvas.getContext("2d");
+let width = canvas.width;
+let height = canvas.height;
+
+
+//lantai 1
+
+ctx.fillStyle = "#FDF6EC";
+ctx.fillRect(140,210,300,100);
+ctx.strokeRect(140,210,300,100);
+
+//lantai 2
+ctx.fillStyle = "#FDF6EC";
+ctx.beginPath();
+ctx.moveTo(180,180);
+ctx.fillRect(170,140,240,70);
+ctx.strokeRect(170,140,240,70);
+ctx.closePath();
+
+ctx.fill();
+
+//garis lantai 2
+
+ctx.fillStyle = "#7882A4";
+ctx.beginPath();
+ctx.fillRect(170,140,240,10);
+ctx.closePath();
+//garis lantai 2
+ctx.fillStyle ="#7882A4";
+ctx.beginPath();
+ctx.moveTo(310,140);
+ctx.moveTo(205,140);
+ctx.arc(285,140,80,0,3.2,3*Math.PI);
+ctx.closePath();
+ctx.stroke();
+//garis lantai 1
+ctx.beginPath();
+ctx.fillStyle = "#7882A4";
+ctx.fillRect(140,210,300,10);
+ctx.strokeRect(140,210,300,100);
+ctx.closePath();
+
+
+//garis kubah
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(205,130,160,10);
+ctx.closePath();
+
+//pintu-pintu
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(205,260,30,50);
+ctx.closePath();
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(205,260,30,50);
+ctx.arc(220,261,15,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(280,260,30,50);
+ctx.arc(295,261,15,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(355,260,30,50);
+ctx.arc(370,261,15,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(220,180,16, 30);
+ctx.arc(228,181,8,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(258,180,16, 30);
+ctx.arc(266,181,8,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(290,180,16, 30);
+ctx.arc(298,181,8,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(350,180,16, 30);
+ctx.arc(358,181,8,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+
+
+ctx.fillStyle="#1572A1";
+ctx.beginPath();
+ctx.fillRect(322,180,16, 30);
+ctx.arc(330,181,8,0,3.2,3*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+
+
+//menara Masjid
+
+ctx.fillStyle = "#FDF6EC";
+ctx.fillRect(100,100,40,210);
+ctx.strokeRect(100,100,40,210);
+
+ctx.beginPath();
+ctx.arc(120,100,19,0,3.2,3*Math.PI);
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.fillStyle = "#1572A1";
+ctx.fillRect(100,95,40,5);
+ctx.strokeRect(140,210,300,100);
+ctx.closePath();
+
+
+//bulan bintang
+
+ctx.beginPath();
+ctx.fillStyle = "#1572A1";
+ctx.fillRect(280,45,5,15);
+ctx.strokeRect(140,210,300,100);
+ctx.closePath();
+
+ctx.beginPath();
+ctx.arc(282,32,13,6.3,3*Math.PI);
+ctx.moveTo(280,280);
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+ctx.beginPath();
+ctx.fillStyle = "#1572A1";
+ctx.fillRect(118,69,4,12);
+ctx.strokeRect(140,210,300,100);
+ctx.closePath();
+
+ctx.beginPath();
+ctx.arc(120,60,8,6.3,3*Math.PI);
+ctx.moveTo(280,280);
+ctx.stroke();
+ctx.closePath();
+
+  </script>
+
+</body>
+</html>
